@@ -174,3 +174,9 @@ document.querySelector(".email").textContent = siteContent["contact"]["email"];
 let footerContent = document.querySelector("footer p");
 footerContent.setAttribute("class", "copyright");
 footerContent.textContent = siteContent["footer"]["copyright"];
+
+footerContent.style.marginTop = "100px";
+
+// SCARY!
+ctaHeader.innerHTML = "DOM <br> Is <br> Awesome";
+let ctaDiv = document.querySelector(".cta-text")
