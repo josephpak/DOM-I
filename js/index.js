@@ -73,7 +73,6 @@ navigation.prepend(addition2);
 
 // Nav Text Styling
 let navNew = document.querySelectorAll("nav a");
-navNew.forEach(element => element.style.color = "green");
 
 
 // CTA
@@ -180,3 +179,17 @@ footerContent.style.marginTop = "100px";
 // SCARY!
 ctaHeader.innerHTML = "DOM <br> Is <br> Awesome";
 let ctaDiv = document.querySelector(".cta-text")
+
+// STRETCH GOAL -- Content Updater Button
+let container = document.querySelector(".container");
+let crazyBtn = document.createElement("button");
+container.prepend(crazyBtn);
+crazyBtn.textContent = "Magick";
+crazyBtn.style.margin = "10px 2px";
+crazyBtn.onclick = document.querySelectorAll('p').forEach(element => element.style.color = 'red');
+
+
+
+
+
+
