@@ -58,6 +58,24 @@ navLinks[3].textContent = siteContent["nav"]["nav-item-4"];
 navLinks[4].textContent = siteContent["nav"]["nav-item-5"];
 navLinks[5].textContent = siteContent["nav"]["nav-item-6"];
 
+// Nav Additions
+let navigation = document.querySelector("nav");
+
+let addition1 = document.createElement("a");
+addition1.setAttribute("class", "News");
+addition1.textContent = "News"
+navigation.appendChild(addition1);
+
+let addition2 = document.createElement("a");
+addition2.setAttribute("class", "Reading");
+addition2.textContent = "Reading"
+navigation.prepend(addition2);
+
+// Nav Text Styling
+let navNew = document.querySelectorAll("nav a");
+navNew.forEach(element => element.style.color = "green");
+
+
 // CTA
 let ctaHeader = document.querySelector(".cta h1");
 ctaHeader.textContent = siteContent["cta"]["h1"];
