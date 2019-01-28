@@ -188,8 +188,3 @@ crazyBtn.textContent = "Magick";
 crazyBtn.style.margin = "10px 2px";
 crazyBtn.onclick = document.querySelectorAll('p').forEach(element => element.style.color = 'red');
 
-
-
-
-
-
