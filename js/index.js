@@ -186,10 +186,19 @@ let crazyBtn = document.createElement("button");
 container.prepend(crazyBtn);
 crazyBtn.textContent = "Magick";
 crazyBtn.style.margin = "10px 2px";
-crazyBtn.onclick = document.querySelectorAll('p').forEach(element => element.style.color = 'red');
 
+let counter = 0;
+let pText = document.querySelectorAll("p");
 
+function modifyTextColor () {
+  if (counter % 2 === 0) {
+    pText.forEach(element => element.style.color = "black");
+    navNew.forEach(element => element.style.color = "black");
+  } else {
+    pText.forEach(element => element.style.color = "purple");
+    navNew.forEach(element => element.style.color = "purple");
+  }
+  counter++;
+}
 
-
-
-
+crazyBtn.addEventListener("click", modifyTextColor);
