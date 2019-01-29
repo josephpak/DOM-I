@@ -1,9 +1,20 @@
+let body = document.querySelector("body");
+let buttonDiv = document.createElement("div");
+let startBtn = document.createElement("button");
+
+body.appendChild(buttonDiv);
+body.style.flex = "flex";
+body.style.flexDirection = "column";
+buttonDiv.appendChild(startBtn);
+
+startBtn.textContent = "Start";
+
 setInterval(myTimer, 10);
+
 let hundredths = 0;
 let tenths = 0;
 let ones = 0;
 let tens = 0;
-
 
 function myTimer() {
     if(hundredths < 9) {
