@@ -9,12 +9,21 @@ buttonDiv.appendChild(startBtn);
 
 startBtn.textContent = "Start";
 
-setInterval(myTimer, 10);
+function timerControl () {
+    var begin = false;
+    if (begin === true) {
+        timerStart;
+        
+    }
+}
+
+let timerStart = setInterval(myTimer, 10);
 
 let hundredths = 0;
 let tenths = 0;
 let ones = 0;
 let tens = 0;
+let finished = false;
 
 function myTimer() {
     if(hundredths < 9) {
@@ -43,7 +52,8 @@ function myTimer() {
                 document.getElementById("secondOnes").textContent = 0;
                 document.getElementById("msHundreds").textContent = 0;
                 document.getElementById("msTens").textContent = 0;
+                finished = true;
             }
         }
-    }    
+    } 
 }
