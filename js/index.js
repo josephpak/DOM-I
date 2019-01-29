@@ -190,7 +190,7 @@ crazyBtn.style.margin = "10px 2px";
 let counter = 0;
 let pText = document.querySelectorAll("p");
 
-function modifyTextColor () {
+function modifyTextColor() {
   if (counter % 2 === 0) {
     pText.forEach(element => element.style.color = "black");
     navNew.forEach(element => element.style.color = "black");
