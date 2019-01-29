@@ -35,14 +35,14 @@ function myTimer() {
                 document.getElementById("msHundreds").textContent = hundredths;
                 document.getElementById("msTens").textContent = tenths;
             } else {
-                tens++;
-                ones = 0;
-                tenths = 0;
-                hundredths = 0;
-                document.getElementById("secondTens").textContent = tens;
-                document.getElementById("secondOnes").textContent = ones;
-                document.getElementById("msHundreds").textContent = hundredths;
-                document.getElementById("msTens").textContent = tenths;
+                // tens = 1;
+                // ones = 0;
+                // tenths = 0;
+                // hundredths = 0;
+                document.getElementById("secondTens").textContent = 1;
+                document.getElementById("secondOnes").textContent = 0;
+                document.getElementById("msHundreds").textContent = 0;
+                document.getElementById("msTens").textContent = 0;
             }
         }
     }    
